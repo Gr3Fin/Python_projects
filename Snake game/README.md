@@ -6,3 +6,4 @@
 * food.py - _create food._  
 * scoreboard.py - _create the scoreboard._  
 * snake.py - _create and control the snake._
+* highscore.txt - _keeps track of the highscore._
