@@ -1,6 +1,6 @@
 # Turtle crossing game
 
-Don't get the turtle to be run over by a car!
+> Don't get the turtle to be run over by a car!
 
 * Trutle_game.py - _launch the game._  
 * car_manager.py - _create and control caras._  
