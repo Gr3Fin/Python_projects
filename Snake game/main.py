@@ -1,3 +1,5 @@
+# The main file that executes the game
+
 import snake
 import time
 from turtle import Screen
