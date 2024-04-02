@@ -2,8 +2,8 @@
 
 > Connect to the Trivia database and get 10 random questions.
 
-* main.py - quiz game file
-* data.py - get questions from Trivia
-* question_model.py - create a class for questions
-* quiz_brain.py - define quiz functionality
-* ui.py - define quiz user interface
+* main.py - _quiz game file._
+* data.py - _get questions from Trivia._
+* question_model.py - _create a class for questions._
+* quiz_brain.py - _define quiz functionality._
+* ui.py - _define quiz user interface._
