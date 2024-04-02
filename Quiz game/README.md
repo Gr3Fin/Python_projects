@@ -1,6 +1,6 @@
 # The quiz game
 
-> Connect to the Trivia database and get 10 random questions.
+> Connect to the Trivia database and get 10 random questions from random categories.
 
 * main.py - _quiz game file._
 * data.py - _get questions from Trivia._
