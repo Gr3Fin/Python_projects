@@ -4,4 +4,4 @@
 
 ![pomodoro](./assets/images/pomodoro_image.jpg)
 --
-### Based on tkinter module
+#### - Based on tkinter module
