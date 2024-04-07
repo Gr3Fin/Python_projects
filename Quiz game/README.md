@@ -2,6 +2,7 @@
 
 > Connect to the Trivia database and get 10 random questions from random categories.
 ---
+Files structure:
 * main.py - _quiz game file._
 * data.py - _get questions from Trivia._
 * question_model.py - _create a class for questions._
