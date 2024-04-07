@@ -7,3 +7,6 @@
 * question_model.py - _create a class for questions._
 * quiz_brain.py - _define quiz functionality._
 * ui.py - _define quiz user interface._
+
+### Based on tkinter module and API
+
