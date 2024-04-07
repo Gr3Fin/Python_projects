@@ -13,7 +13,7 @@
 ---
 #### - Used Spotify API
 #### - Web page scraping with BeautifullSoap
-
+---
 Useful links:  
 - [Billboard hot 100](https://www.billboard.com/charts/hot-100/)
 - [Spotify](https://open.spotify.com/)
