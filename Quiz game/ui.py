@@ -15,24 +15,25 @@ class QuizInterface:
         self.window = Tk()
         self.window.title("Quiz")
         self.window.config(pady=20, padx=20, bg=THEME_COLOR)
-
         self.canvas = Canvas(width=300, height=250, bg="white", highlightthickness=0)
         self.question = self.canvas.create_text(150, 125,
-                                                text="sdfghj",
+                                                text="",
                                                 width=280,
                                                 font=(FONT_NAME, 20, "italic"),
                                                 fill=THEME_COLOR)
-        self.canvas.grid(row=1, column=0, columnspan=2, pady=50)
+        self.canvas.grid(row=1, column=0, columnspan=2, pady=50, sticky="we")
 
         self.score_label = Label(text="Score: ", fg="white", bg=THEME_COLOR)
-        self.score_label.grid(row=0, column=1)
+        self.score_label.grid(row=0, column=1, sticky="e")
+        self.q_info = Label(text="Category:", justify="left", fg="white", bg=THEME_COLOR)
+        self.q_info.grid(row=0, column=0, sticky="w")
 
         ok = PhotoImage(file="images/true.png")
         no = PhotoImage(file="images/false.png")
         self.button_ok = Button(image=ok, command=self.yes_button, highlightthickness=0)
         self.button_no = Button(image=no, command=self.no_button, highlightthickness=0)
-        self.button_ok.grid(row=2, column=0)
-        self.button_no.grid(row=2, column=1)
+        self.button_ok.grid(row=2, column=0, sticky="w")
+        self.button_no.grid(row=2, column=1, sticky='e')
 
         self.question_display()
 
@@ -43,8 +44,10 @@ class QuizInterface:
         if self.quiz.still_has_questions():
             self.score_label.config(text=f"Score: {self.quiz.score}")
             q_text = self.quiz.next_question()
-            self.canvas.itemconfig(self.question, text=q_text)
+            self.canvas.itemconfig(self.question, text=q_text[0])
+            self.q_info.config(text=f"Category: {q_text[1]},\nLevel: {q_text[2]}")
         else:
+            self.score_label.config(text=f"Score: {self.quiz.score}")
             self.canvas.itemconfig(self.question, text="THE END")
             self.button_ok.config(state="disabled")
             self.button_no.config(state="disabled")
