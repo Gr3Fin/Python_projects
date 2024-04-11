@@ -2,12 +2,15 @@
 
 import requests
 
-parameters = {
-    "amount": 10,
-    "type": "boolean"
-}
 
-response = requests.get(url="https://opentdb.com/api.php", params=parameters)  # the API endpoint URL
-response.raise_for_status()
+class QuizData:
 
-question_data = response.json()["results"]
+    def __init__(self):
+        parameters = {
+            "amount": 10,
+            "type": "boolean"}
+
+        response = requests.get(url="https://opentdb.com/api.php", params=parameters)  # the API endpoint URL
+        response.raise_for_status()
+
+        self.question_data = response.json()["results"]

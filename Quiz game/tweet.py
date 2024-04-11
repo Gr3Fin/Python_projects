@@ -18,11 +18,9 @@ class ScoreTweet:
         chrome_options.add_experimental_option("detach", True)
         self.driver = webdriver.Chrome(options=chrome_options)
         self.driver.get(URL)
-        self.down = 0
-        self.up = 0
 
     def tweet_score(self, score, q_no):
-        time.sleep(2)
+        time.sleep(5)
         # Sometimes X asks about the username.
         try:
             user = self.driver.find_element(By.NAME, value="text")
@@ -43,3 +41,7 @@ class ScoreTweet:
                                                          '1]/div/div/div/div/div/div[2]/div/div/div/div')
         tweet.send_keys(f"Hey! I have just completed the Trivia general knowledge quiz.\n"
                         f"Here is my score: {score}/{q_no}\nCan you beat it?")
+
+#
+# dummy = ScoreTweet()
+# dummy.tweet_score(5, 10)

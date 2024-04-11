@@ -1,6 +1,8 @@
 # --- Create the user interface for the quiz ---
 
 from tkinter import *
+from tkinter import messagebox
+from tweet import ScoreTweet
 from quiz_brain import QuizBrain
 
 THEME_COLOR = "#375362"
@@ -15,6 +17,7 @@ class QuizInterface:
         self.window = Tk()
         self.window.title("Quiz")
         self.window.config(pady=20, padx=20, bg=THEME_COLOR)
+        self.window.attributes("-topmost", True)
         self.canvas = Canvas(width=300, height=250, bg="white", highlightthickness=0)
         self.question = self.canvas.create_text(150, 125,
                                                 text="",
@@ -51,6 +54,7 @@ class QuizInterface:
             self.canvas.itemconfig(self.question, text="THE END")
             self.button_ok.config(state="disabled")
             self.button_no.config(state="disabled")
+            self.tweet_popup()
 
     def yes_button(self):
         is_true = self.quiz.check_answer("True")
@@ -66,3 +70,10 @@ class QuizInterface:
         else:
             self.canvas.config(bg="red")
         self.window.after(1000, self.question_display)
+
+    def tweet_popup(self):
+        tweet = messagebox.askquestion(message="Would you like to share your quiz score on Twitter?")
+        if tweet == "yes":
+            tweet = ScoreTweet()
+            tweet.tweet_score(score=self.quiz.score, q_no=self.quiz.question_number)
+        self.window.destroy()
