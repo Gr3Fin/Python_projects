@@ -22,7 +22,7 @@ class ScoreTweet:
         self.up = 0
 
     def tweet_score(self, score, q_no):
-        time.sleep(5)
+        time.sleep(2)
         # Sometimes X asks about the username.
         try:
             user = self.driver.find_element(By.NAME, value="text")
@@ -43,7 +43,3 @@ class ScoreTweet:
                                                          '1]/div/div/div/div/div/div[2]/div/div/div/div')
         tweet.send_keys(f"Hey! I have just completed the Trivia general knowledge quiz.\n"
                         f"Here is my score: {score}/{q_no}\nCan you beat it?")
-
-
-call = ScoreTweet()
-call.tweet_score(score=5, q_no=10)
