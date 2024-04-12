@@ -1,4 +1,4 @@
-# Projects created during my Python learning process.
+# List of projects created during my Python learning process, so far.
 ---
 - OOP
 - API
