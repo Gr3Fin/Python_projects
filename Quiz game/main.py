@@ -1,20 +1,9 @@
 # --- Create the quiz app that displays 10 random questions (True/False) from different categories. ---
-from tkinter import messagebox
 
 from question_model import Question
-from data import QuizData #question_data
+from data import QuizData
 from quiz_brain import QuizBrain
 from ui import QuizInterface
-
-
-def play_again():
-    next_round = messagebox.askquestion(message="Would you like to play again?")
-    if next_round == "yes":
-        return True
-    else:
-        return False
-
-
 play = True
 
 while play:
@@ -31,4 +20,4 @@ while play:
     quiz = QuizBrain(question_bank)
     quiz_ui = QuizInterface(quiz)
 
-    play = play_again()
+    play = quiz_ui.play_again()

@@ -2,8 +2,8 @@
 
 from tkinter import *
 from tkinter import messagebox
-from tweet import ScoreTweet
 from quiz_brain import QuizBrain
+from credentials import LogInInfo
 
 THEME_COLOR = "#375362"
 FONT_NAME = "Arial"
@@ -74,6 +74,14 @@ class QuizInterface:
     def tweet_popup(self):
         tweet = messagebox.askquestion(message="Would you like to share your quiz score on Twitter?")
         if tweet == "yes":
-            tweet = ScoreTweet()
-            tweet.tweet_score(score=self.quiz.score, q_no=self.quiz.question_number)
-        self.window.destroy()
+            self.window.destroy()
+            LogInInfo(self.quiz)
+        else:
+            self.window.destroy()
+
+    def play_again(self):
+        next_round = messagebox.askquestion(message="Would you like to play again?")
+        if next_round == "yes":
+            return True
+        else:
+            return False
