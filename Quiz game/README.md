@@ -3,7 +3,7 @@
 > Connect to the Trivia database and get 10 random questions from random categories.  
 > Share you score on Twitter.
 ---
-Files structure
+Files structure:
 * main.py - _quiz game file._
 * credentials.py - _provide necessary data for logging into Twitter account_
 * data.py - _get questions from Trivia._
@@ -15,6 +15,6 @@ Files structure
 #### - Used Trivia DB API
 #### - Tweeting with selenium library
 ---
-Useful links
+Useful links:
 - [Trivia data base](https://opentdb.com/)
 - [Trivia DB API documentation](https://opentdb.com/api_config.php)
