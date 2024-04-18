@@ -53,9 +53,7 @@ def count_down(count):
     if count_sec < 10:
         count_sec = f"0{count_sec}"
 
-    canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")  # call the method itemconfig in canvas,
-                                                                    # pass which element is going to be changed and
-                                                                    # what is going to change
+    canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
 
     if count > 0:
         global timer_reset
@@ -74,8 +72,8 @@ window.title("Pomodoro")
 window.config(pady=50, padx=100, bg=YELLOW)
 
 canvas = Canvas(width=350, height=224, bg=YELLOW, highlightthickness=0)
-tomato_img = PhotoImage(file="tomato.png")  # read the image
-canvas.create_image(175, 112, image=tomato_img)  # specify X and Y position and the image
+tomato_img = PhotoImage(file="assets/images/tomato.png")
+canvas.create_image(175, 112, image=tomato_img)
 timer_text = canvas.create_text(178, 130, text="00:00", fill="white", font=(FONT_NAME, 35, "bold"))
 canvas.grid(row=1, column=1)
 
