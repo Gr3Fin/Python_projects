@@ -34,5 +34,4 @@ class Data:
         urls = self.beds.select(selector='.css-u2ayx9 a')
         url = ["www.olx.pl" + u.get("href") for u in urls]
 
-        # print(len(info), len(price), len(url))
         return info, price, url
