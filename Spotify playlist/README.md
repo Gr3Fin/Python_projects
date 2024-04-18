@@ -2,14 +2,14 @@
 
 > Creates a playlist in Spotify for the desired moment in time, by scraping the billboard.com webpage.
 ---
-* 100_songs.py - _create a playlist by typing the desired date._
----
 **NOTE**:  
- 1. You have to have Spotify account.  
+ 1. Spotify account is needed.  
  2. Create a Spotify App (https://developer.spotify.com/dashboard/) to get ClientID and Client Secret - for API authorization.  
  3. Spotify uses OAuth to allow third-party applications to access a Spotify user's account without giving them the username or password.  
  4. Use _http://example.com_ as your Redirect URI (make sure you set the redirect URI in the Spotify Dashboard as well).  
  5. To make it work you have to create a token.txt file (if Billboar is connected to Spotify)
+---
+* 100_songs.py - _create a playlist by typing the desired date._
 ---
 #### - Used Spotify API
 #### - Web page scraping with BeautifullSoap
