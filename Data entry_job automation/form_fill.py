@@ -1,18 +1,17 @@
-# --- Fill the form in google ---
+# --- Fill the Google Form ---
 
 from selenium import webdriver
 from data import Data
 from selenium.webdriver.common.by import By
 import time
 
-URL = "https://forms.gle/KzEnUy1xy5YCC6Jv8"
+URL = "Link to Google Forms"
 
-# Keep Chrome browser window open after opening
+# Open browser window
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option("detach", True)
 
-# Open Chrome at desired web page
-driver = webdriver.Chrome(options=chrome_options)  # initializing an object Chrome
+driver = webdriver.Chrome(options=chrome_options)
 driver.get(URL)
 time.sleep(3)
 
@@ -39,4 +38,5 @@ for n in range(len(data_set[0])):
     reload = driver.find_element(By.TAG_NAME, value='a')
     reload.click()
 
-# driver.close()
+# Close browser window
+driver.close()
