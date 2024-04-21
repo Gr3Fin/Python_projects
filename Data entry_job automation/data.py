@@ -1,11 +1,11 @@
-# --- Scrape the website for information about child beds ---
+# --- Scrape the website for information about bikes ---
 
 import requests
 from bs4 import BeautifulSoup
 import re
 
-URL = ("https://www.olx.pl/warszawa/q-%C5%82%C3%B3%C5%BCeczko-160/?search%5Bdist%5D=5&search%5Border%5D"
-       "=filter_float_price:asc&search%5Bfilter_float_price:from%5D=100")
+URL = ("https://www.olx.pl/warszawa/q-rowerek-dzieci%C4%99cy/?search%5Border%5D=filter_float_price:asc&search"
+       "%5Bfilter_float_price:from%5D=50")
 
 
 class Data:
@@ -21,9 +21,9 @@ class Data:
         # print(self.apartments.prettify())
 
     def find_data(self):
-        # find addresses of the apartments
-        infos = self.beds.select(selector='.css-z3gu2d')
-        info = [i.text for i in infos[1:]]
+        # Find info about a bike
+        infos = self.beds.select(selector='.css-z3gu2d h6')
+        info = [i.text for i in infos]
         info = list(filter(None, info))
 
         # find prices of the apartments
