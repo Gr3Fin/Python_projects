@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 import time
 import proces_data
 
-URL = "https://forms.gle/ywJqnXXmXKYSwFaT6"
+URL = "Put the link to the Google Forms here."
 
 # Open browser window
 chrome_options = webdriver.ChromeOptions()
