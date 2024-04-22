@@ -21,16 +21,16 @@ class Data:
         # print(self.apartments.prettify())
 
     def find_data(self):
-        # Find info about a bike
+        # Find info about the bikes
         infos = self.beds.select(selector='.css-z3gu2d h6')
         info = [i.text for i in infos]
         info = list(filter(None, info))
 
-        # find prices of the apartments
+        # find prices of the bikes
         prices = self.beds.select(selector='.css-u2ayx9 p')
         price = [p.text for p in prices]
 
-        # find urls of the apartments
+        # find urls of the bikes
         urls = self.beds.select(selector='.css-u2ayx9 a')
         url = ["www.olx.pl" + u.get("href") for u in urls]
 
