@@ -3,7 +3,7 @@
 > Looking for a bicykle for my child, so she could learn how to ride a bike, I came up with an idea to automize my search process a little bit
 > and store bike offers that match my requirements in google sheets with Python.
 ---
-Skills and Tools Covered
+<u>Skills and Tools Covered:</u>
 #### - Data scraping with BeautifulSoap
 #### - Data insert with selenium 
 #### - Data filtering with pandas 
