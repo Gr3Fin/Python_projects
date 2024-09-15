@@ -6,7 +6,7 @@
 - Turtle Graphics
 - OOP
 - GUI
-- Read / write files
+- Read / write / append files
 ---
 **Files structure:**
 * main.py - _launch the game._  
