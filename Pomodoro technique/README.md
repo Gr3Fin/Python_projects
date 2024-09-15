@@ -5,4 +5,6 @@
 
 ![pomodoro](./assets/images/pomodoro_image.jpg)
 ---
-#### - Based on tkinter module
+**Skills and Tools Covered:**
+- GUI
+- tkinter
