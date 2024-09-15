@@ -4,6 +4,7 @@
 > and store bike offers that match my requirements in google sheets with Python.
 ---
 **Skills and Tools Covered:**
+- OOP
 - Data scraping with BeautifulSoap
 - Data insert with selenium 
 - Data filtering with pandas 
