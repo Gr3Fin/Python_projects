@@ -3,9 +3,9 @@
 **Skills and Tools Covered:**
 - OOP
 - API
-- web scraping
-- list comprehension
-- dictionaries/JSON files
-- error handling
-- read/write/append files
+- Web scraping
+- List comprehension
+- Dictionaries / JSON files
+- Error handling
+- Read / write / append files
 ---
