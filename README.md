@@ -1,6 +1,6 @@
 # List of projects created during my Python learning process, so far...
 ---
-Skills and Tools Covered:
+**Skills and Tools Covered:**
 - OOP
 - API
 - web scraping
