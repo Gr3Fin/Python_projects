@@ -2,7 +2,7 @@
 
 > The famous game originally created in 1972.
 ---
-Files structure:
+**Files structure:**
 * Pong_game.py - _game launch._  
 * paddle.py - _create and define the paddles._  
 * scoreboard.py - _create a scoreboard for the game._  
