@@ -3,8 +3,11 @@
 **Skills and Tools Covered:**
 - OOP
 - API
-- Web scraping
+- GUI
+- Web scraping (selenium, BeautifullSoap)
+- Data insert (selenium)
 - List comprehension
+- Environmental variables
 - Dictionaries / JSON files
 - Error handling
 - Read / write / append files
