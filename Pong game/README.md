@@ -6,7 +6,7 @@
 - OOP
 - GUI
 - Turtle Graphics
-- Read / write files
+- Read / write / append files
 ---
 **Files structure:**
 * Pong_game.py - _game launch._  
