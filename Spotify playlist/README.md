@@ -2,9 +2,11 @@
 
 > Creates a playlist in Spotify for the desired moment in time, by scraping the billboard.com webpage.
 ---
-Skills and Tools Covered:
-#### - Used Spotify API
-#### - Web page scraping with BeautifullSoap
+**Skills and Tools Covered:**
+- API
+- Environmental variables
+- List comprehension
+- Web page scraping with BeautifullSoap
 ---
 **NOTE**:  
  1. Spotify account is needed.  
@@ -13,7 +15,9 @@ Skills and Tools Covered:
  4. Use _http://example.com_ as your Redirect URI (make sure you set the redirect URI in the Spotify Dashboard as well).  
  5. To make it work you have to create a token.txt file (if Billboar is connected to Spotify)
 ---
+**NOTE:**
 * 100_songs.py - _create a playlist by typing the desired date._
+* Used Spotify API
 ---
 Useful links:  
 - [Billboard hot 100](https://www.billboard.com/charts/hot-100/)
