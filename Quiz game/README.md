@@ -1,9 +1,19 @@
 # The quiz game
 
 > Connect to the Trivia database and get 10 random questions from random categories.  
-> Share you score on Twitter.
+> Share your score on Twitter.
 ---
-Files structure:
+
+**Skills and Tools Covered:**
+- OOP
+- Data insert with selenium
+- Web scraping with selenium
+- tkinter
+- GUI
+- API
+---
+
+**Files structure:**
 * main.py - _quiz game file._
 * credentials.py - _provide necessary data for logging into Twitter account_
 * data.py - _get questions from Trivia._
@@ -12,9 +22,10 @@ Files structure:
 * tweet.py - _share the quiz score on Twitter._
 * ui.py - _define quiz user interface._
 ---
-#### - Used Trivia DB API
-#### - Tweeting with selenium library
+**NOTE:**
+- Used Trivia DB API
+- Tweeting with selenium library
 ---
-Useful links:
+**Useful links:**
 - [Trivia data base](https://opentdb.com/)
 - [Trivia DB API documentation](https://opentdb.com/api_config.php)
