@@ -2,6 +2,12 @@
 
 > The famous game originally created in 1972.
 ---
+**Skills and Tools Covered:**
+- OOP
+- GUI
+- Turtle Graphics
+
+---
 **Files structure:**
 * Pong_game.py - _game launch._  
 * paddle.py - _create and define the paddles._  
